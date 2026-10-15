@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bilim o'quv markazi</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <header class="ramka-bosh">
+        <h1>🎓 Bilim o'quv markazi</h1>
+        <p class="shior">Bilim — kelajak kaliti</p>
+        <nav>
+            <a href="#ingliz-tili">Ingliz tili</a>
+            <a href="#dasturlash">Dasturlash</a>
+            <a href="#matematika">Matematika</a>
+            <a href="#narxlar">Narxlar</a>
+            <a href="#yozilish">Yozilish</a>
+        </nav>
+    </header>
+
+    <section class="xush ramka-qoshqat">
+        <h2>Xush kelibsiz!</h2>
+        <p>
+            Bizning markazda tajribali ustozlar bilan ingliz tili,
+            dasturlash va matematikani qulay sharoitda o'rganing.
+        </p>
+        <a class="tugma" href="#yozilish">Kursga yozilish</a>
+    </section>
+
+    <section class="course ramka-qalin" id="ingliz-tili">
+        <h2>Ingliz tili kursi</h2>
+        <p><strong>Davomiyligi:</strong> 8 oy</p>
+        <p><strong>Dars vaqti:</strong> haftasiga 3 marta, 2 soatdan</p>
+        <p><strong>Narxi:</strong> oyiga 550 000 so'm</p>
+        <p><strong>Kurs dasturi:</strong></p>
+        <ul>
+            <li>Alifbo va asosiy so'zlar</li>
+            <li>Grammatika asoslari</li>
+            <li>So'zlashuv mashqlari</li>
+            <li>Tinglab tushunish</li>
+        </ul>
+    </section>
+
+    <section class="course ramka-qoshqat" id="dasturlash">
+        <h2>💻 Dasturlash kursi</h2>
+        <p><strong>Davomiyligi:</strong> 9 oy</p>
+        <p><strong>Dars vaqti:</strong> haftasiga 4 marta, 2 soatdan</p>
+        <p><strong>Narxi:</strong> oyiga 650 000 so'm</p>
+        <p><strong>Kurs dasturi:</strong></p>
+        <ul>
+            <li>HTML va CSS</li>
+            <li>JavaScript asoslari</li>
+            <li>Python asoslari</li>
+            <li>Kichik loyiha yaratish</li>
+        </ul>
+    </section>
+
+    <section class="course ramka-uzuq" id="matematika">
+        <h2>➗ Matematika kursi</h2>
+        <p><strong>Davomiyligi:</strong> 6 oy</p>
+        <p><strong>Dars vaqti:</strong> haftasiga 3 marta, 2 soatdan</p>
+        <p><strong>Narxi:</strong> oyiga 500 000 so'm</p>
+        <p><strong>Kurs dasturi:</strong></p>
+        <ul>
+            <li>Algebra</li>
+            <li>Geometriya</li>
+            <li>Masalalar yechish</li>
+            <li>Test mashqlari</li>
+            <li>Mantiqiy masalalar yechish</li>
+            <li>Sertifikatda tushadigan masalalarni yechish</li>
+        </ul>
+    </section>
+
+    <section class="course ramka-qalin" id="narxlar">
+        <h2>📋 Kurslar jadvali</h2>
+        <table>
+            <tr>
+                <th>Kurs</th>
+                <th>Davomiyligi</th>
+                <th>Haftasiga</th>
+                <th>Narxi (oyiga)</th>
+            </tr>
+            <tr>
+                <td>Ingliz tili</td>
+                <td>8 oy</td>
+                <td>3 marta</td>
+                <td>550 000 so'm</td>
+            </tr>
+            <tr>
+                <td>Dasturlash</td>
+                <td>9 oy</td>
+                <td>4 marta</td>
+                <td>650 000 so'm</td>
+            </tr>
+            <tr>
+                <td>Matematika</td>
+                <td>6 oy</td>
+                <td>3 marta</td>
+                <td>500 000 so'm</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="course ramka-qoshqat" id="yozilish">
+        <h2>✍️ Kursga yozilish</h2>
+        <p>Quyidagi formani to'ldiring, biz siz bilan bog'lanamiz.</p>
+
+        <h3>Yozilish tartibi</h3>
+        <ol>
+            <li>Ism va telefon raqamingizni kiriting.</li>
+            <li>Kursni tanlang.</li>
+            <li>Qulay dars vaqtini belgilang.</li>
+            <li>"Yuborish" tugmasini bosing.</li>
+            <li>Operator siz bilan bog'lanadi.</li>
+        </ol>
+
+        <form action="#" method="post" class="ramka-uzuq">
+            <label for="ism">Ism-familiya:</label>
+            <input type="text" id="ism" name="ism" required>
+
+            <label for="tel">Telefon raqam:</label>
+            <input type="tel" id="tel" name="tel" placeholder="+998 90 123 45 67" required>
+
+            <label for="kurs">Kurs:</label>
+            <select id="kurs" name="kurs">
+                <option>Ingliz tili</option>
+                <option>Dasturlash</option>
+                <option>Matematika</option>
+            </select>
+
+            <label for="vaqt">Dars vaqti:</label>
+            <select id="vaqt" name="vaqt">
+                <option>Ertalab</option>
+                <option>Kunduzi</option>
+                <option>Kechqurun</option>
+            </select>
+
+            <button type="submit">Yuborish</button>
+        </form>
+    </section>
+
+    <footer class="ramka-bosh">
+        <p>📍 Qoraqalpog'iston Respublikasi,Beruniy tumani &nbsp;|&nbsp; 📞 +998 71 000 00 00</p>
+    </footer>
+
+</body>
+
+</html>
