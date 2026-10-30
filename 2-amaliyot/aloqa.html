@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilim o‘quv markazi</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header id="tepa">
+        <nav>
+            <b>Bilim o‘quv markazi</b>
+            <ul>
+                <li><a href="index.html">Bosh sahifa</a></li>
+                <li><a href="batafsil.html">Kurslar</a></li>
+                <li><a href="aloqa.html">Aloqa</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Kursga yozilish</h2>
+            <form action="#" method="post">
+                <label for="ism">Ismingiz</label>
+                <input type="text" id="ism" name="ism" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <label for="tel">Telefon</label>
+                <input type="tel" id="tel" name="tel" pattern="\+998[0-9]{9}" placeholder="+998901234567" required>
+                <label for="sana">Tug‘ilgan sana</label>
+                <input type="date" id="sana" name="sana">
+                <label for="kurs">Kurs</label>
+                <select id="kurs" name="kurs">
+                    <option value="ingliz">Ingliz tili</option>
+                    <option value="ielts">IELTS</option>
+                    <option value="web">Web dasturlash</option>
+                </select>
+                <fieldset>
+                    <legend>Dars vaqti</legend>
+                    <input type="radio" id="ertalab" name="vaqt" value="ertalab">
+                    <label for="ertalab">Ertalab</label>
+                    <input type="radio" id="kechqurun" name="vaqt" value="kechqurun">
+                    <label for="kechqurun">Kechqurun</label>
+                </fieldset>
+                <label for="izoh">Izoh</label>
+                <textarea id="izoh" name="izoh" rows="3"></textarea>
+                <div>
+                    <input type="checkbox" id="rozi" name="rozi" required>
+                    <label for="rozi">Roziman</label>
+                </div>
+                <button type="submit">Yuborish</button>
+            </form>
+        </section>
+        <section>
+            <h2>Xarita</h2>
+            <iframe title="Markaz xaritada" src="https://www.google.com/maps?q=Urganch&amp;output=embed"></iframe>
+        </section>
+        <aside class="karta">
+            <p>Savol bo‘lsa, qo‘ng‘iroq qiling: +998 62 224-00-00</p>
+        </aside>
+    </main>
+    <footer>
+        <div>
+            <h3>Manzil</h3>
+            <p>Urganch shahri, Al-Xorazmiy ko‘chasi, 12-uy</p>
+        </div>
+        <div>
+            <h3>Telefon</h3>
+            <p>+998 62 224-00-00</p>
+        </div>
+    </footer>
+    <a class="yuqoriga" href="#tepa">↑ Yuqoriga</a>
+</body>
+
+</html>
